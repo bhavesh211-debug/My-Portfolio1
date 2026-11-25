@@ -156,7 +156,8 @@ section {
     box-shadow: 0 4px 10px rgb(0 0 0 / 20%);
     transform: translateY(-2px);
 }
-
+.profile-photo {
+    padding: 10px;
 }
 .container1 {
     background: #9595d5;
@@ -177,7 +178,11 @@ section {
     color: #323f4b;
 }
 
-    
+.about-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
 
 .skills {
