@@ -1,0 +1,365 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    padding-top: 8px;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+section {
+    padding: 24px;
+}
+
+.site-header {
+    top: 0;
+    width: 100%;
+    background: #ffffff;
+    justify-content: space-between;
+    border-top: 2px solid #03060c;
+    border-bottom: 2px solid #03060c;
+    border-radius: 30px;
+    transition: box-shadow 180ms ease, border-color 180ms ease;
+}
+
+.site-header:hover {
+    border-color: #567f9e;
+    box-shadow: 0 4px 14px rgb(3 6 12 / 14%);
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.name {
+    width: 50px;
+    height: 50px;
+    
+}
+
+/* mobile */
+.nav-links {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    margin: 12px 0 0;
+}
+
+.nav-links li a {
+    padding: 8px 12px;
+    color: #323f4b;
+    font-size: 14px;
+    border-radius: 6px;
+    transition: color 180ms ease, background-color 180ms ease;
+}
+
+.nav-links li a:hover,
+.nav-links li a:focus-visible {
+    color: #ffffff;
+    background-color: #567f9e;
+}
+
+/* tablet + desktop */
+@media (min-width: 768px) {
+    .nav-links {
+        width: auto;
+        margin-left: auto;
+        margin-top: 0;
+        justify-content: flex-end;
+    }
+}
+
+.banner {
+    height: 50vh;
+    background-color: #567f9e;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.banner-content {
+    text-align: center;
+}
+
+
+.banner p {
+    color: #f5f7fa;
+    font-size: 24px;
+    margin: 12px 0 24px;
+}
+
+.banner-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+
+}
+.h1 {
+    color: #131313;
+    font-size: 45px;
+    font-weight: 300;
+}
+
+.p1 {
+    color: #323f4b;
+    font-size: 40px;
+    margin: 12px 0 24px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 50px;
+}
+
+.custom-button {
+    background-color: hwb(24 0% 0% / 0.971);
+    color: #ffffff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    align-items: left;
+    transition: background-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
+}
+
+.custom-button a {
+    color: inherit;
+}
+
+.custom-button:hover,
+.custom-button:focus-within {
+    background-color: #c94f00;
+    box-shadow: 0 4px 10px rgb(0 0 0 / 20%);
+    transform: translateY(-2px);
+}
+
+}
+.container1 {
+    background: #9595d5;
+    
+    background-size: cover;
+    margin:auto;
+    padding: 20px;
+}
+
+.section-header {
+    text-align: left;
+    margin-bottom: 40px;
+}
+.about-text {
+    text-align: justify;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #323f4b;
+}
+
+    
+
+
+.skills {
+    background: #fbfbfc;
+    border-top: 1px solid #03060c;
+    border-bottom: 1px solid #03060c;
+
+}
+.html {
+    flex-direction: row;
+   display: flex;
+   justify-content: center;
+}
+.skills-logo {
+    width: 100px;
+    height: 100px;
+    margin: 15px;
+}
+.py{
+    width: 150px;
+    margin: 10px;
+}
+.container2  {
+    background: #9595d5;
+    
+    background-size: cover;
+    margin:auto;
+    padding: 20px;
+}
+.prj {
+    font-size: 20px;
+    font-weight: bold;
+}
+.project-items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-between;
+}
+.contact {
+    background: #edf4f3;
+    margin: auto;
+    padding: 56px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: clamp(24px, 5vw, 64px);
+}
+
+.contact > .container {
+    flex: 1 1 300px;
+    max-width: 520px;
+}
+
+.contact-info li {
+    overflow-wrap: anywhere;
+}
+
+.contact-form {
+    flex: 1 1 300px;
+    max-width: 520px;
+    display: grid;
+    gap: 18px;
+    padding: clamp(24px, 4vw, 36px);
+    background: #ffffff;
+    border: 1px solid #d5e0df;
+    border-radius: 16px;
+    box-shadow: 0 12px 32px rgb(3 6 12 / 10%);
+}
+
+.contact-form h3 {
+    margin: 0 0 2px;
+    color: #172b35;
+    font-size: 24px;
+}
+
+.contact-form .form-group {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.contact-form .form-field {
+    display: grid;
+    gap: 7px;
+}
+
+.contact-form label {
+    color: #323f4b;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    min-width: 0;
+    padding: 13px 14px;
+    border: 1px solid #c5d2d1;
+    border-radius: 8px;
+    background: #fbfdfd;
+    color: #323f4b;
+    font: inherit;
+    transition: border-color 180ms ease, box-shadow 180ms ease;
+}
+
+.contact-form textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #7b8b91;
+}
+
+.contact-form input:focus-visible,
+.contact-form textarea:focus-visible {
+    outline: none;
+    border-color: #567f9e;
+    box-shadow: 0 0 0 3px rgb(86 127 158 / 18%);
+}
+
+.contact-form .button {
+    justify-self: start;
+    padding: 12px 22px;
+    border: 0;
+    border-radius: 8px;
+    background: #567f9e;
+    color: #ffffff;
+    font: inherit;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
+}
+
+.contact-form .button:hover,
+.contact-form .button:focus-visible {
+    background: #3e647f;
+    box-shadow: 0 5px 12px rgb(3 6 12 / 18%);
+    transform: translateY(-2px);
+}
+
+@media (max-width: 700px) {
+    .contact {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .contact > .container,
+    .contact-form {
+        width: 100%;
+        max-width: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact {
+        padding: 40px 18px;
+    }
+
+    .contact-form .form-group {
+        grid-template-columns: 1fr;
+    }
+}
+.site-footer {
+    background: #03060c;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    justify-content: space-between;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .site-header,
+    .nav-links li a,
+    .custom-button,
+    .contact-form input,
+    .contact-form textarea,
+    .contact-form .button {
+        transition: none;
+    }
+}
+
+    
